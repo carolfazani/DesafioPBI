@@ -1,0 +1,11 @@
+Total_partidos = DISTINCTCOUNT(resultados_candidato[sigla_partido])
+
+Total_votos = SUM(resultados_candidato[votos])
+
+Total_eleitos = CALCULATE(SUM(resultados_candidato[votos]), 'resultados_candidato'[resultado]="eleito")
+
+Percentual_eleitos % = DIVIDE([Total_eleitos],[Total_votos],0)
+
+Media_votos_total = AVERAGE(resultados_candidato[votos])
+
+Media_votos_eleito = CALCULATE(AVERAGE(resultados_candidato[votos]),FILTER(resultados_candidato, resultados_candidato[resultado]="eleito"))
