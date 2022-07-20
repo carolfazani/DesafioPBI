@@ -1,2 +1,2 @@
 # DesafioPBI
-Análise de dados eleitorais utilizando o Microsoft Power BI
+Análise de dados eleitorais utilizando o Python, SQL e Microsoft Power BI
