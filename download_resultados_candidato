@@ -1,0 +1,7 @@
+import basedosdados as bd
+
+df = bd.read_table(dataset_id='br_tse_eleicoes',
+table_id='resultados_candidato_municipio_zona',
+billing_project_id="<YOUR_PROJECT_ID>")
+
+df.to_csv("resultados_candidato_municipio_zona")
